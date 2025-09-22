@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raditya Gathfan Arrasyid - Biodata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Javanese&display=swap');
+        
+        :root {
+            --primary-color: #ff0000; /* Vibrant Red */
+            --secondary-color: #e0e0e0;
+            --background-color: #000000; /* Pure Black */
+            --card-background: #1a1a1a; /* Dark Gray */
+            --text-color: #f0f0f0;
+            --accent-glow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            --border-radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Particle Animation */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .particles span {
+            position: absolute;
+            background: rgba(255, 0, 0, 0.5);
+            border-radius: 50%;
+            animation: animate 25s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) scale(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        .particles span:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; animation-duration: 10s; }
+        .particles span:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+        .particles span:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; animation-duration: 8s; }
+        .particles span:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+        .particles span:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; animation-duration: 10s; }
+        .particles span:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; animation-duration: 20s; }
+        .particles span:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; animation-duration: 15s; }
+        .particles span:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+        .particles span:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+        .particles span:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+        .particles span:nth-child(11) { left: 5%; width: 120px; height: 120px; animation-delay: 5s; animation-duration: 25s; }
+        .particles span:nth-child(12) { left: 90%; width: 40px; height: 40px; animation-delay: 10s; animation-duration: 15s; }
+        .particles span:nth-child(13) { left: 45%; width: 70px; height: 70px; animation-delay: 12s; animation-duration: 13s; }
+        .particles span:nth-child(14) { left: 15%; width: 90px; height: 90px; animation-delay: 8s; animation-duration: 16s; }
+        .particles span:nth-child(15) { left: 60%; width: 50px; height: 50px; animation-delay: 1s; animation-duration: 9s; }
+        .particles span:nth-child(16) { left: 30%; width: 130px; height: 130px; animation-delay: 3s; animation-duration: 22s; }
+        .particles span:nth-child(17) { left: 80%; width: 15px; height: 15px; animation-delay: 6s; animation-duration: 14s; }
+        .particles span:nth-child(18) { left: 55%; width: 95px; height: 95px; animation-delay: 9s; animation-duration: 19s; }
+        .particles span:nth-child(19) { left: 25%; width: 30px; height: 30px; animation-delay: 11s; animation-duration: 23s; }
+        .particles span:nth-child(20) { left: 95%; width: 100px; height: 100px; animation-delay: 13s; animation-duration: 24s; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1; /* Main content is in front of the animation */
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, var(--card-background) 0%, transparent 100%);
+        }
+
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            box-shadow: var(--accent-glow);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 10px;
+            text-shadow: var(--accent-glow);
+            text-transform: uppercase;
+        }
+
+        .school-info {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-link {
+            background-color: var(--card-background);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid var(--primary-color);
+        }
+
+        .nav-link:hover {
+            background-color: var(--primary-color);
+            box-shadow: var(--accent-glow);
+            color: var(--background-color);
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--accent-glow);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            text-shadow: 0 0 5px var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .card p, .card ul {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+        
+        .card li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        .bio-item {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .bio-label {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .bio-value {
+            color: var(--secondary-color);
+        }
+
+        .languages {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .language-item {
+            margin-top: 5px;
+        }
+
+        .javanese-script {
+            font-family: 'Noto Sans Javanese', serif;
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .glowing-chart canvas {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            box-shadow: 0 0 10px var(--primary-color), inset 0 0 5px var(--primary-color);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--card-background);
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 2px solid var(--primary-color);
+            color: var(--secondary-color);
+            text-shadow: 0 0 5px var(--primary-color);
+        }
+        
+        /* === NEW ANIMATION STYLE === */
+        .center-glowing-orb {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background-color: rgba(255, 0, 0, 0.2);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color);
+            animation: pulse-glow 3s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        .center-glowing-orb::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border-radius: 50%;
+            background: conic-gradient(transparent, transparent, var(--primary-color));
+            animation: rotate-ring 4s linear infinite;
+        }
+        
+        .center-glowing-orb::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border-radius: 50%;
+            background: conic-gradient(transparent, transparent, var(--primary-color));
+            animation: rotate-ring-reverse 5s linear infinite;
+            filter: blur(5px);
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
+        }
+
+        @keyframes rotate-ring {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotate-ring-reverse {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+        /* === END OF NEW ANIMATION STYLE === */
+        
+        .translator-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .translator-buttons button {
+            background-color: var(--card-background);
+            color: var(--text-color);
+            border: 1px solid var(--primary-color);
+            padding: 8px 15px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .translator-buttons button.active, .translator-buttons button:hover {
+            background-color: var(--primary-color);
+            box-shadow: var(--accent-glow);
+            color: var(--background-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    
+    <!-- === NEW ANIMATION ELEMENT === -->
+    <div class="center-glowing-orb"></div>
+    <!-- === END OF NEW ANIMATION ELEMENT === -->
+    
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="profile-header">
+                <img src="png" alt="Foto Raditya Gathfan Arrasyid" class="profile-img">
+                <h1 data-key="name_title">Raditya Gathfan Arrasyid</h1>
+                <p class="school-info" data-key="school_info">Siswa SMK Ma'arif NU Tirto</p>
+            </div>
+            <nav>
+                <a href="#biodata" class="nav-link" data-key="nav_biodata">Biodata Diri</a>
+                <a href="#pendidikan" class="nav-link" data-key="nav_pendidikan">Pendidikan</a>
+                <a href="#keterampilan" class="nav-link" data-key="nav_keterampilan">Keterampilan</a>
+                <a href="#pengalaman" class="nav-link" data-key="nav_pengalaman">Pengalaman</a>
+                <a href="#prestasi" class="nav-link" data-key="nav_prestasi">Prestasi</a>
+                <a href="#statistik" class="nav-link" data-key="nav_statistik">Statistik</a>
+                <a href="#hobi" class="nav-link" data-key="nav_hobi">Hobi & Minat</a>
+                <a href="#moto" class="nav-link" data-key="nav_moto">Motto & Harapan</a>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Language Translator Buttons -->
+            <div class="translator-buttons">
+                <button onclick="setLanguage('id')" class="active">ID</button>
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('ar')">AR</button>
+                <button onclick="setLanguage('jv')">JV</button>
+            </div>
+            
+            <!-- Biodata Diri -->
+            <section id="biodata" class="card">
+                <h2 data-key="biodata_title">Biodata Diri</h2>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_nama">Nama</span>
+                    <span class="bio-value" data-key="value_nama">Raditya Gathfan Arrasyid</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_lahir">Lahir</span>
+                    <span class="bio-value" data-key="value_lahir">Pekalongan, 27 Juni 2009</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_alamat">Alamat</span>
+                    <span class="bio-value" data-key="value_alamat">Desa Karang Jati RT06 RW02, Wiradesa, Pekalongan</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_kelamin">Kelamin</span>
+                    <span class="bio-value" data-key="value_kelamin">Laki-Laki</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_agama">Agama</span>
+                    <span class="bio-value" data-key="value_agama">Islam</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_warga">Warga</span>
+                    <span class="bio-value" data-key="value_warga">Indonesia</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_status">Status</span>
+                    <span class="bio-value" data-key="value_status">Pelajar</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_email">Email</span>
+                    <span class="bio-value" data-key="value_email">gathfanraditya@gmail.com</span>
+                </div>
+                <div class="bio-item">
+                    <span class="bio-label" data-key="label_telpon">Telpon</span>
+                    <span class="bio-value" data-key="value_telpon">088227696869</span>
+                </div>
+            </section>
+
+            <!-- Pendidikan -->
+            <section id="pendidikan" class="card">
+                <h2 data-key="pendidikan_title">Pendidikan</h2>
+                <ul data-key="pendidikan_list">
+                    <li>SDN Karang Jati (2015-2021)</li>
+                    <li>SMP PonPes PDF Walindo (2021-2024)</li>
+                    <li>SMK Ma'arif NU Tirto (2024)</li>
+                </ul>
+            </section>
+
+            <!-- Keterampilan -->
+            <section id="keterampilan" class="card">
+                <h2 data-key="keterampilan_title">Keterampilan</h2>
+                <ul data-key="keterampilan_list">
+                    <li>Kemampuan mendesain grafis dengan Canva</li>
+                    <li>Menginstall Debian 11</li>
+                    <li>Kemampuan berkomunikasi dengan baik</li>
+                </ul>
+            </section>
+
+            <!-- Riwayat Hidup / Pengalaman -->
+            <section id="pengalaman" class="card">
+                <h2 data-key="pengalaman_title">Riwayat Hidup / Pengalaman</h2>
+                <ul data-key="pengalaman_list">
+                    <li>Pernah menyeting proyektor dengan disambungkan ke sound sistem, STB dan YouTube (November 2024-Juni 2025).</li>
+                    <li>Pernah menjadi panitia pengajian dengan baik dan lancar.</li>
+                </ul>
+            </section>
+            
+            <!-- Prestasi -->
+            <section id="prestasi" class="card">
+                <h2 data-key="prestasi_title">Prestasi</h2>
+                <ul data-key="prestasi_list">
+                    <li>Masuk ranking 5 besar berturut-turut selama 3 tahun di PonPes Walindo.</li>
+                    <li>Peringkat 5 di lomba Hadroh tingkat kabupaten.</li>
+                    <li>Ditunjuk menjadi Sekretaris di Majelis desa.</li>
+                </ul>
+            </section>
+
+            <!-- Statistik Kegiatan Sehari-hari -->
+            <section id="statistik" class="card">
+                <h2 data-key="statistik_title">Statistika Kegiatan Sehari-hari</h2>
+                <div class="chart-container glowing-chart">
+                    <canvas id="dailyActivityChart"></canvas>
+                </div>
+                <p data-key="statistik_avg"><strong>Rata-rata kegiatan per hari:</strong> 20.43 jam</p>
+                <p data-key="statistik_total"><strong>Total kegiatan per minggu:</strong> 138 jam</p>
+                <p data-key="statistik_akademik">Presentasi prestasi akademik: 50%</p>
+            </section>
+            
+            <!-- Hobi & Minat -->
+            <section id="hobi" class="card">
+                <h2 data-key="hobi_title">Hobi & Minat</h2>
+                <p data-key="hobi_subtitle"><strong>Hobi:</strong></p>
+                <ul data-key="hobi_list">
+                    <li>Touring</li>
+                    <li>Mencoba Hal Baru</li>
+                    <li>Bermain Game</li>
+                </ul>
+                <div class="chart-container glowing-chart">
+                    <canvas id="hobbyChart"></canvas>
+                </div>
+                <p data-key="hobi_modus"><strong>Modus hobi:</strong> Bermain Game (40%)</p>
+                <p data-key="minat_subtitle"><strong>Minat:</strong></p>
+                <ul data-key="minat_list">
+                    <li>Bidang membaca: membaca ilmu tentang Financial.</li>
+                    <li>Bidang teknologi: tertarik mempelajari komputer, internet, dan jaringan.</li>
+                </ul>
+            </section>
+            
+            <!-- Motto & Harapan -->
+            <section id="moto" class="card">
+                <h2 data-key="moto_title">Motto & Harapan</h2>
+                <p data-key="motto_text"><strong>Motto:</strong> "Apapun yang ada didepan sana Saya pastikan saya akan SUKSES"</p>
+                <p data-key="harapan_text"><strong>Harapan Masa Depan:</strong> Pengusaha Sukses yang dermawan</p>
+            </section>
+
+            <!-- Tabel Data -->
+            <section id="tabel-data" class="card">
+                <h2 data-key="tabel_title">Tabel Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-key="tabel_kategori">Kategori</th>
+                            <th data-key="tabel_deskripsi">Deskripsi</th>
+                            <th data-key="tabel_statistik">Statistik</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-key="tabel_hobi_row">
+                            <td>Hobi</td>
+                            <td>Touring, Mencoba Hal Baru, Bermain Game</td>
+                            <td>Modus: Bermain Game (40%)</td>
+                        </tr>
+                        <tr data-key="tabel_prestasi_row">
+                            <td>Prestasi</td>
+                            <td>Ranking 5, Lomba Hadroh, Sekretaris Desa</td>
+                            <td>Akademik: 1, Non-akademik: 2, Presentasi Akademik: 50%</td>
+                        </tr>
+                        <tr data-key="tabel_kegiatan_row">
+                            <td>Kegiatan Mingguan</td>
+                            <td>Tidur, Sekolah, Belajar, Hobi, Bersihkan Rumah, Lain-lain</td>
+                            <td>Rata-rata/hari: 20.43 jam, Total/minggu: 138 jam</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Multi-language Section -->
+            <section id="languages" class="card">
+                <h2 data-key="languages_title">Bahasa & Aksara</h2>
+                <p class="languages" data-key="languages_subtitle_en"><strong>English:</strong></p>
+                <p class="language-item" data-key="languages_en_text">Hello, my name is Raditya. Welcome to my personal website.</p>
+                <p class="languages" data-key="languages_subtitle_jv"><strong>Basa Jawa:</strong></p>
+                <p class="language-item" data-key="languages_jv_text">Sugeng rawuh, nami kula Raditya Gathfan Arrasyid. Menawi wonten pitakon, saged hubungi kula.</p>
+                <p class="languages" data-key="languages_subtitle_jv_script"><strong>Aksara Jawa:</strong></p>
+                <p class="javanese-script" data-key="languages_jv_script_text">ꦫꦢꦶꦠꦾ​ꦒꦠ꧀ꦥꦤ꧀​ꦲꦫꦿꦱꦶꦢ꧀​</p>
+                <p class="languages" data-key="languages_subtitle_ar"><strong>Arabic:</strong></p>
+                <p class="language-item" dir="rtl" style="text-align: right;" data-key="languages_ar_text">أهلاً وسهلاً، اسمي راديتيا غثفن. مرحباً بكم في موقعي الشخصي.</p>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p data-key="footer_motto">"Teruslah Untuk Hidup"</p>
+            <p>– Gatpan</p>
+        </footer>
+    </div>
+
+    <script>
+        // Data terjemahan untuk berbagai bahasa
+        const translations = {
+            id: {
+                name_title: "Raditya Gathfan Arrasyid",
+                school_info: "Siswa SMK Ma'arif NU Tirto",
+                nav_biodata: "Biodata Diri",
+                nav_pendidikan: "Pendidikan",
+                nav_keterampilan: "Keterampilan",
+                nav_pengalaman: "Pengalaman",
+                nav_prestasi: "Prestasi",
+                nav_statistik: "Statistik",
+                nav_hobi: "Hobi & Minat",
+                nav_moto: "Motto & Harapan",
+                biodata_title: "Biodata Diri",
+                label_nama: "Nama",
+                value_nama: "Raditya Gathfan Arrasyid",
+                label_lahir: "Lahir",
+                value_lahir: "Pekalongan, 27 Juni 2009",
+                label_alamat: "Alamat",
+                value_alamat: "Desa Karang Jati RT06 RW02, Wiradesa, Pekalongan",
+                label_kelamin: "Kelamin",
+                value_kelamin: "Laki-Laki",
+                label_agama: "Agama",
+                value_agama: "Islam",
+                label_warga: "Warga",
+                value_warga: "Indonesia",
+                label_status: "Status",
+                value_status: "Pelajar",
+                label_email: "Email",
+                value_email: "gathfanraditya@gmail.com",
+                label_telpon: "Telpon",
+                value_telpon: "088227696869",
+                pendidikan_title: "Pendidikan",
+                pendidikan_list: ["SDN Karang Jati (2015-2021)", "SMP PonPes PDF Walindo (2021-2024)", "SMK Ma'arif NU Tirto (2024)"],
+                keterampilan_title: "Keterampilan",
+                keterampilan_list: ["Kemampuan mendesain grafis dengan Canva", "Menginstall Debian 11", "Kemampuan berkomunikasi dengan baik"],
+                pengalaman_title: "Riwayat Hidup / Pengalaman",
+                pengalaman_list: ["Pernah menyeting proyektor dengan disambungkan ke sound sistem, STB dan YouTube (November 2024-Juni 2025).", "Pernah menjadi panitia pengajian dengan baik dan lancar."],
+                prestasi_title: "Prestasi",
+                prestasi_list: ["Masuk ranking 5 besar berturut-turut selama 3 tahun di PonPes Walindo.", "Peringkat 5 di lomba Hadroh tingkat kabupaten.", "Ditunjuk menjadi Sekretaris di Majelis desa."],
+                statistik_title: "Statistika Kegiatan Sehari-hari",
+                statistik_avg: "<strong>Rata-rata kegiatan per hari:</strong> 20.43 jam",
+                statistik_total: "<strong>Total kegiatan per minggu:</strong> 138 jam",
+                statistik_akademik: "Presentasi prestasi akademik: 50%",
+                hobi_title: "Hobi & Minat",
+                hobi_subtitle: "<strong>Hobi:</strong>",
+                hobi_list: ["Touring", "Mencoba Hal Baru", "Bermain Game"],
+                hobi_modus: "<strong>Modus hobi:</strong> Bermain Game (40%)",
+                minat_subtitle: "<strong>Minat:</strong>",
+                minat_list: ["Bidang membaca: membaca ilmu tentang Financial.", "Bidang teknologi: tertarik mempelajari komputer, internet, dan jaringan."],
+                moto_title: "Motto & Harapan",
+                motto_text: "<strong>Motto:</strong> \"Apapun yang ada didepan sana Saya pastikan saya akan SUKSES\"",
+                harapan_text: "<strong>Harapan Masa Depan:</strong> Pengusaha Sukses yang dermawan",
+                tabel_title: "Tabel Data",
+                tabel_kategori: "Kategori",
+                tabel_deskripsi: "Deskripsi",
+                tabel_statistik: "Statistik",
+                tabel_hobi_row: ["Hobi", "Touring, Mencoba Hal Baru, Bermain Game", "Modus: Bermain Game (40%)"],
+                tabel_prestasi_row: ["Prestasi", "Ranking 5, Lomba Hadroh, Sekretaris Desa", "Akademik: 1, Non-akademik: 2, Presentasi Akademik: 50%"],
+                tabel_kegiatan_row: ["Kegiatan Mingguan", "Tidur, Sekolah, Belajar, Hobi, Bersihkan Rumah, Lain-lain", "Rata-rata/hari: 20.43 jam, Total/minggu: 138 jam"],
+                languages_title: "Bahasa & Aksara",
+                languages_subtitle_en: "<strong>English:</strong>",
+                languages_en_text: "Hello, my name is Raditya. Welcome to my personal website.",
+                languages_subtitle_jv: "<strong>Basa Jawa:</strong>",
+                languages_jv_text: "Sugeng rawuh, nami kula Raditya Gathfan Arrasyid. Menawi wonten pitakon, saged hubungi kula.",
+                languages_subtitle_jv_script: "<strong>Aksara Jawa:</strong>",
+                languages_jv_script_text: "ꦫꦢꦶꦠꦾꦒꦠ꧀ꦥꦤ꧀ꦲꦫꦿꦱꦶꦢ꧀",
+                languages_subtitle_ar: "<strong>Arabic:</strong>",
+                languages_ar_text: "أهلاً وسهلاً، اسمي راديتيا غثفن. مرحباً بكم في موقعي الشخصي.",
+            },
+            en: {
+                name_title: "Raditya Gathfan Arrasyid",
+                school_info: "Student of SMK Ma'arif NU Tirto",
+                nav_biodata: "Personal Biodata",
+                nav_pendidikan: "Education",
+                nav_keterampilan: "Skills",
+                nav_pengalaman: "Experience",
+                nav_prestasi: "Achievements",
+                nav_statistik: "Statistics",
+                nav_hobi: "Hobbies & Interests",
+                nav_moto: "Motto & Hopes",
+                biodata_title: "Personal Biodata",
+                label_nama: "Name",
+                value_nama: "Raditya Gathfan Arrasyid",
+                label_lahir: "Born",
+                value_lahir: "Pekalongan, 27 June 2009",
+                label_alamat: "Address",
+                value_alamat: "Karang Jati Village RT06 RW02, Wiradesa, Pekalongan",
+                label_kelamin: "Gender",
+                value_kelamin: "Male",
+                label_agama: "Religion",
+                value_agama: "Islam",
+                label_warga: "Nationality",
+                value_warga: "Indonesian",
+                label_status: "Status",
+                value_status: "Student",
+                label_email: "Email",
+                value_email: "gathfanraditya@gmail.com",
+                label_telpon: "Phone",
+                value_telpon: "088227696869",
+                pendidikan_title: "Education",
+                pendidikan_list: ["SDN Karang Jati (2015-2021)", "SMP PonPes PDF Walindo (2021-2024)", "SMK Ma'arif NU Tirto (2024)"],
+                keterampilan_title: "Skills",
+                keterampilan_list: ["Ability to design graphics with Canva", "Installing Debian 11", "Good communication skills"],
+                pengalaman_title: "Life History / Experience",
+                pengalaman_list: ["Has experience setting up projectors connected to sound systems, STB, and YouTube (November 2024-June 2025).", "Has been a successful committee member for a religious gathering."],
+                prestasi_title: "Achievements",
+                prestasi_list: ["Ranked in the top 5 for 3 consecutive years at PonPes Walindo.", "5th place in the district-level Hadroh competition.", "Appointed as the Secretary of the village assembly."],
+                statistik_title: "Daily Activity Statistics",
+                statistik_avg: "<strong>Average activity per day:</strong> 20.43 hours",
+                statistik_total: "<strong>Total activity per week:</strong> 138 hours",
+                statistik_akademik: "Academic achievement presentation: 50%",
+                hobi_title: "Hobbies & Interests",
+                hobi_subtitle: "<strong>Hobbies:</strong>",
+                hobi_list: ["Touring", "Trying New Things", "Playing Games"],
+                hobi_modus: "<strong>Hobby mode:</strong> Playing Games (40%)",
+                minat_subtitle: "<strong>Interests:</strong>",
+                minat_list: ["Reading field: reading about financial science.", "Technology field: interested in learning about computers, internet, and networks."],
+                moto_title: "Motto & Hopes",
+                motto_text: "<strong>Motto:</strong> \"Whatever is out there, I will make sure I will SUCCEED\"",
+                harapan_text: "<strong>Future Hopes:</strong> A successful and generous entrepreneur",
+                tabel_title: "Data Table",
+                tabel_kategori: "Category",
+                tabel_deskripsi: "Description",
+                tabel_statistik: "Statistics",
+                tabel_hobi_row: ["Hobbies", "Touring, Trying New Things, Playing Games", "Mode: Playing Games (40%)"],
+                tabel_prestasi_row: ["Achievements", "Rank 5, Hadroh Competition, Village Secretary", "Academic: 1, Non-academic: 2, Academic Presentation: 50%"],
+                tabel_kegiatan_row: ["Weekly Activities", "Sleeping, School, Studying, Hobbies, Cleaning House, Others", "Average/day: 20.43 hours, Total/week: 138 hours"],
+                languages_title: "Languages & Scripts",
+                languages_subtitle_en: "<strong>English:</strong>",
+                languages_en_text: "Hello, my name is Raditya. Welcome to my personal website.",
+                languages_subtitle_jv: "<strong>Javanese:</strong>",
+                languages_jv_text: "Welcome, my name is Raditya Gathfan Arrasyid. If you have questions, you can contact me.",
+                languages_subtitle_jv_script: "<strong>Javanese Script:</strong>",
+                languages_jv_script_text: "ꦫꦢꦶꦠꦾꦒꦠ꧀ꦥꦤ꧀ꦲꦫꦿꦱꦶꦢ꧀",
+                languages_subtitle_ar: "<strong>Arabic:</strong>",
+                languages_ar_text: "مرحباً، اسمي راديتيا غثفن. أهلاً بكم في موقعي الشخصي.",
+            },
+            ar: {
+                name_title: "راديتيا غثفن أراسيد",
+                school_info: "طالب في مدرسة SMK Ma'arif NU Tirto",
+                nav_biodata: "البيانات الشخصية",
+                nav_pendidikan: "التعليم",
+                nav_keterampilan: "المهارات",
+                nav_pengalaman: "الخبرة",
+                nav_prestasi: "الإنجازات",
+                nav_statistik: "الإحصائيات",
+                nav_hobi: "الهوايات والاهتمامات",
+                nav_moto: "الشعار والآمال",
+                biodata_title: "البيانات الشخصية",
+                label_nama: "الاسم",
+                value_nama: "راديتيا غثفن أراسيد",
+                label_lahir: "تاريخ الميلاد",
+                value_lahir: "بيكالونغان، 27 يونيو 2009",
+                label_alamat: "العنوان",
+                value_alamat: "قرية كارانج جاتي RT06 RW02، ويراديسا، بيكالونغان",
+                label_kelamin: "الجنس",
+                value_kelamin: "ذكر",
+                label_agama: "الديانة",
+                value_agama: "الإسلام",
+                label_warga: "الجنسية",
+                value_warga: "إندونيسية",
+                label_status: "الحالة",
+                value_status: "طالب",
+                label_email: "البريد الإلكتروني",
+                value_email: "gathfanraditya@gmail.com",
+                label_telpon: "الهاتف",
+                value_telpon: "088227696869",
+                pendidikan_title: "التعليم",
+                pendidikan_list: ["SDN Karang Jati (2015-2021)", "SMP PonPes PDF Walindo (2021-2024)", "SMK Ma'arif NU Tirto (2024)"],
+                keterampilan_title: "المهارات",
+                keterampilan_list: ["القدرة على التصميم الجرافيكي باستخدام كانفا", "تثبيت ديبيان 11", "مهارات تواصل جيدة"],
+                pengalaman_title: "السيرة الذاتية / الخبرة",
+                pengalaman_list: ["لديه خبرة في إعداد أجهزة العرض المتصلة بأنظمة الصوت، STB، ويوتيوب (نوفمبر 2024 - يونيو 2025).", "كان عضوًا ناجحًا في لجنة لقاء ديني."],
+                prestasi_title: "الإنجازات",
+                prestasi_list: ["صُنِّفَ ضمن أفضل 5 طلاب لمدة 3 سنوات متتالية في PonPes Walindo.", "المركز الخامس في مسابقة هادروه على مستوى المقاطعة.", "تم تعيينه أمينًا عامًا لمجلس القرية."],
+                statistik_title: "إحصائيات الأنشطة اليومية",
+                statistik_avg: "<strong>متوسط النشاط اليومي:</strong> 20.43 ساعة",
+                statistik_total: "<strong>إجمالي النشاط الأسبوعي:</strong> 138 ساعة",
+                statistik_akademik: "نسبة الإنجاز الأكاديمي: 50٪",
+                hobi_title: "الهوايات والاهتمامات",
+                hobi_subtitle: "<strong>الهوايات:</strong>",
+                hobi_list: ["جولات بالدراجة النارية", "تجربة أشياء جديدة", "لعب الألعاب"],
+                hobi_modus: "<strong>أبرز هواية:</strong> لعب الألعاب (40٪)",
+                minat_subtitle: "<strong>الاهتمامات:</strong>",
+                minat_list: ["في مجال القراءة: قراءة علوم المالية.", "في مجال التكنولوجيا: مهتم بتعلم أجهزة الكمبيوتر، الإنترنت، والشبكات."],
+                moto_title: "الشعار والآمال",
+                motto_text: "<strong>الشعار:</strong> \"أينما كنت، سأضمن نجاحي\"",
+                harapan_text: "<strong>آمال المستقبل:</strong> رائد أعمال ناجح وسخي",
+                tabel_title: "جدول البيانات",
+                tabel_kategori: "الفئة",
+                tabel_deskripsi: "الوصف",
+                tabel_statistik: "الإحصائيات",
+                tabel_hobi_row: ["الهوايات", "جولات بالدراجة النارية، تجربة أشياء جديدة، لعب الألعاب", "أبرز هواية: لعب الألعاب (40٪)"],
+                tabel_prestasi_row: ["الإنجازات", "المركز 5، مسابقة هادروه، أمين القرية", "أكاديمي: 1، غير أكاديمي: 2، نسبة الإنجاز الأكاديمي: 50٪"],
+                tabel_kegiatan_row: ["الأنشطة الأسبوعية", "النوم، المدرسة، الدراسة، الهوايات، تنظيف المنزل، أخرى", "متوسط/يوم: 20.43 ساعة، إجمالي/أسبوع: 138 ساعة"],
+                languages_title: "اللغات والخطوط",
+                languages_subtitle_en: "<strong>الإنجليزية:</strong>",
+                languages_en_text: "Hello, my name is Raditya. Welcome to my personal website.",
+                languages_subtitle_jv: "<strong>الجاوية:</strong>",
+                languages_jv_text: "Sugeng rawuh, nami kula Raditya Gathfan Arrasyid. Menawi wonten pitakon, saged hubungi kula.",
+                languages_subtitle_jv_script: "<strong>الخط الجاوي:</strong>",
+                languages_jv_script_text: "ꦫꦢꦶꦠꦾꦒꦠ꧀ꦥꦤ꧀ꦲꦫꦿꦱꦶꦢ꧀",
+                languages_subtitle_ar: "<strong>العربية:</strong>",
+                languages_ar_text: "مرحباً، اسمي راديتيا غثفن. أهلاً بكم في موقعي الشخصي.",
+            },
+            jv: {
+                name_title: "Raditya Gathfan Arrasyid",
+                school_info: "Siswa SMK Ma'arif NU Tirto",
+                nav_biodata: "Biodata Dhiri",
+                nav_pendidikan: "Pendidikan",
+                nav_keterampilan: "Katrampilan",
+                nav_pengalaman: "Riwayat Urip",
+                nav_prestasi: "Prestasi",
+                nav_statistik: "Statistik",
+                nav_hobi: "Hobi & Minat",
+                nav_moto: "Motto & Pangarep-arep",
+                biodata_title: "Biodata Dhiri",
+                label_nama: "Asma",
+                value_nama: "Raditya Gathfan Arrasyid",
+                label_lahir: "Wiyosan",
+                value_lahir: "Pekalongan, 27 Juni 2009",
+                label_alamat: "Alamat",
+                value_alamat: "Dusun Karang Jati RT06 RW02, Wiradesa, Pekalongan",
+                label_kelamin: "Jinis Kelamin",
+                value_kelamin: "Jaler",
+                label_agama: "Agama",
+                value_agama: "Islam",
+                label_warga: "Warganegara",
+                value_warga: "Indonesia",
+                label_status: "Status",
+                value_status: "Siswa",
+                label_email: "Email",
+                value_email: "gathfanraditya@gmail.com",
+                label_telpon: "Telpon",
+                value_telpon: "088227696869",
+                pendidikan_title: "Pendidikan",
+                pendidikan_list: ["SDN Karang Jati (2015-2021)", "SMP PonPes PDF Walindo (2021-2024)", "SMK Ma'arif NU Tirto (2024)"],
+                keterampilan_title: "Katrampilan",
+                keterampilan_list: ["Bisa nggawe desain grafis nganggo Canva", "Nginstall Debian 11", "Bisa komunikasi kanthi sae"],
+                pengalaman_title: "Riwayat Urip / Pengalaman",
+                pengalaman_list: ["Nate nyetel proyektor disambung karo sound sistem, STB lan YouTube (November 2024-Juni 2025).", "Nate dadi panitia pengajian kanthi lancar."],
+                prestasi_title: "Prestasi",
+                prestasi_list: ["Nduwe rangking 5 besar terus-terusan 3 taun ing PonPes Walindo.", "Peringkat 5 ing lomba Hadroh tingkat kabupaten.", "Ditunjuk dadi Sekretaris ing Majelis desa."],
+                statistik_title: "Statistik Kegiatan Saben Dinten",
+                statistik_avg: "<strong>Rata-rata kegiatan saben dinten:</strong> 20.43 jam",
+                statistik_total: "<strong>Jumlah kegiatan saben minggu:</strong> 138 jam",
+                statistik_akademik: "Presentasi prestasi akademik: 50%",
+                hobi_title: "Hobi & Minat",
+                hobi_subtitle: "<strong>Hobi:</strong>",
+                hobi_list: ["Touring", "Nyoba Bab Anyar", "Dolanan Game"],
+                hobi_modus: "<strong>Modus hobi:</strong> Dolanan Game (40%)",
+                minat_subtitle: "<strong>Minat:</strong>",
+                minat_list: ["Babagan maca: maca ilmu babagan Financial.", "Babagan teknologi: seneng sinau komputer, internet, lan jaringan."],
+                moto_title: "Motto & Pangarep-arep",
+                motto_text: "<strong>Motto:</strong> \"Babagan apa wae sing ana ing ngarep, Aku yakin bakal SUKSES\"",
+                harapan_text: "<strong>Pangarep-arep Masa Depan:</strong> Pengusaha Sukses sing loma",
+                tabel_title: "Tabel Data",
+                tabel_kategori: "Kategori",
+                tabel_deskripsi: "Katrangan",
+                tabel_statistik: "Statistik",
+                tabel_hobi_row: ["Hobi", "Touring, Nyoba Bab Anyar, Dolanan Game", "Modus: Dolanan Game (40%)"],
+                tabel_prestasi_row: ["Prestasi", "Rangking 5, Lomba Hadroh, Sekretaris Desa", "Akademik: 1, Non-akademik: 2, Presentasi Akademik: 50%"],
+                tabel_kegiatan_row: ["Kegiatan Mingguan", "Turu, Sekolah, Sinau, Hobi, Resiki Omah, Liyane", "Rata-rata/dinten: 20.43 jam, Total/minggu: 138 jam"],
+                languages_title: "Basa & Aksara",
+                languages_subtitle_en: "<strong>English:</strong>",
+                languages_en_text: "Hello, my name is Raditya. Welcome to my personal website.",
+                languages_subtitle_jv: "<strong>Basa Jawa:</strong>",
+                languages_jv_text: "Sugeng rawuh, nami kula Raditya Gathfan Arrasyid. Menawi wonten pitakon, saged hubungi kula.",
+                languages_subtitle_jv_script: "<strong>Aksara Jawa:</strong>",
+                languages_jv_script_text: "ꦫꦢꦶꦠꦾꦒꦠ꧀ꦥꦤ꧀ꦲꦫꦿꦱꦶꦢ꧀",
+                languages_subtitle_ar: "<strong>Arab:</strong>",
+                languages_ar_text: "مرحباً، اسمي راديتيا غثفن. أهلاً بكم في موقعي الشخصي.",
+            }
+        };
+
+        const dailyActivityLabels = {
+            id: ['Tidur', 'Sekolah', 'Belajar Mandiri', 'Hobi', 'Bersihkan Rumah', 'Lain-lain'],
+            en: ['Sleep', 'School', 'Self-study', 'Hobbies', 'Clean House', 'Others'],
+            ar: ['النوم', 'المدرسة', 'الدراسة الذاتية', 'الهوايات', 'تنظيف المنزل', 'أخرى'],
+            jv: ['Turu', 'Sekolah', 'Sinau Mandiri', 'Hobi', 'Resiki Omah', 'Liyane']
+        };
+
+        const hobbyLabels = {
+            id: ['Touring', 'Mencoba Hal Baru', 'Bermain Game'],
+            en: ['Touring', 'Trying New Things', 'Playing Games'],
+            ar: ['جولات بالدراجة النارية', 'تجربة أشياء جديدة', 'لعب الألعاب'],
+            jv: ['Touring', 'Nyoba Bab Anyar', 'Dolanan Game']
+        };
+
+        // Function to update the DOM with translations
+        function setLanguage(lang) {
+            const currentTranslations = translations[lang];
+
+            // Update all elements with data-key attributes
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                const translation = currentTranslations[key];
+                
+                if (translation) {
+                    if (Array.isArray(translation)) {
+                        // Handle list items
+                        const listItems = element.querySelectorAll('li');
+                        translation.forEach((text, index) => {
+                            if (listItems[index]) {
+                                listItems[index].textContent = text;
+                            }
+                        });
+                    } else if (element.tagName === 'P' || element.tagName === 'H2' || element.tagName === 'H1' || element.tagName === 'STRONG' || element.tagName === 'SPAN') {
+                        // Handle text content for various tags
+                        element.innerHTML = translation;
+                    } else if (element.tagName === 'A' || element.tagName === 'TH' || element.tagName === 'TD') {
+                        element.textContent = translation;
+                    }
+                }
+            });
+            
+            // Set the direction for Arabic text
+            if (lang === 'ar') {
+                document.body.dir = 'rtl';
+                document.body.style.textAlign = 'right';
+            } else {
+                document.body.dir = 'ltr';
+                document.body.style.textAlign = 'left';
+            }
+
+            // Update chart labels
+            dailyActivityChart.data.labels = dailyActivityLabels[lang];
+            dailyActivityChart.update();
+            hobbyChart.data.labels = hobbyLabels[lang];
+            hobbyChart.update();
+
+            // Update active button state
+            document.querySelectorAll('.translator-buttons button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`.translator-buttons button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+        }
+
+        // Chart for Daily Activity
+        const dailyActivityData = {
+            labels: dailyActivityLabels.id,
+            datasets: [{
+                label: 'Jumlah Jam per Minggu',
+                data: [56, 30, 5, 12, 7, 28],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)', // Merah
+                    'rgba(255, 0, 0, 0.6)', // Merah muda
+                    'rgba(255, 0, 0, 0.4)', // Merah paling muda
+                    'rgba(26, 26, 26, 0.8)', // Abu-abu gelap
+                    'rgba(26, 26, 26, 0.6)', // Abu-abu
+                    'rgba(26, 26, 26, 0.4)'  // Abu-abu paling muda
+                ],
+                borderColor: 'rgba(255, 255, 255, 0.5)',
+                borderWidth: 1
+            }]
+        };
+
+        const dailyActivityConfig = {
+            type: 'bar',
+            data: dailyActivityData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'var(--text-color)',
+                            font: { family: 'Inter' }
+                        }
+                    },
+                    tooltip: {
+                        titleColor: 'var(--text-color)',
+                        bodyColor: 'var(--text-color)',
+                        backgroundColor: 'rgba(0,0,0,0.7)'
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: 'var(--secondary-color)' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    },
+                    y: {
+                        ticks: { color: 'var(--secondary-color)' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    }
+                }
+            }
+        };
+
+        const dailyActivityChart = new Chart(
+            document.getElementById('dailyActivityChart'),
+            dailyActivityConfig
+        );
+        
+        // Chart for Hobbies
+        const hobbyData = {
+            labels: hobbyLabels.id,
+            datasets: [{
+                data: [25, 35, 40],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)', // Merah
+                    'rgba(26, 26, 26, 0.8)', // Abu-abu gelap
+                    'rgba(255, 0, 0, 0.6)'  // Merah muda
+                ],
+                borderColor: 'rgba(255, 255, 255, 0.5)',
+                borderWidth: 1
+            }]
+        };
+
+        const hobbyConfig = {
+            type: 'pie',
+            data: hobbyData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'var(--text-color)',
+                            font: { family: 'Inter' }
+                        }
+                    },
+                    tooltip: {
+                        titleColor: 'var(--text-color)',
+                        bodyColor: 'var(--text-color)',
+                        backgroundColor: 'rgba(0,0,0,0.7)'
+                    }
+                }
+            }
+        };
+
+        const hobbyChart = new Chart(
+            document.getElementById('hobbyChart'),
+            hobbyConfig
+        );
+    </script>
+
+</body>
+</html>
